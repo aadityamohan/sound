@@ -20,7 +20,7 @@ const Home = ({ products, bannerData, trending }) => {
     </div>
     
     <div className="products-container">
-      {trending?.map((trending) => <Trending trending={trending} />)}
+      {trending?.map((trending) => <Trending key={trending._id} trending={trending} />)}
     </div>
 
    

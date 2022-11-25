@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { AiOutlineShopping } from 'react-icons/ai';
 import { Cart } from "./";
 import { useStateContext } from "../context/StateContext";
+import Image from 'next/image'
 
 import { useUser } from '@auth0/nextjs-auth0';
 
@@ -25,7 +26,7 @@ const Navbar = () => {
        {showCart && <Cart />}
 
     
-      <a className='logo' href='/api/auth/login'>Login </a>
+      <span className='logo'>Login </span>
       
         
 
